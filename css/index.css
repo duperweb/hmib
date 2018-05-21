@@ -1,4 +1,11 @@
-/*reset customize*/
+/*RESET === CUSTOMIZE === NOMALIZE*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -11,9 +18,16 @@ a {
     color: inherit;
 }
 
-/*Base stiles*/
+img {
+    max-width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
 
-header.header-pages , footer{
+/******BASE STILES********/
+
+.header-pages,
+footer {
     background: rgb(204, 202, 189);
     background: url(../img/mainbg.png) no-repeat;
 }
@@ -28,12 +42,13 @@ header.header-pages , footer{
     border-bottom: 1px inset coral;
 }
 
-.artist-resume table,
+table,
 th,
 td {
     border: 1px solid coral;
     border-collapse: collapse;
     color: red;
+    text-transform: capitalize;
 }
 
 th:nth-child(odd) {
@@ -43,33 +58,38 @@ th:nth-child(odd) {
 th:nth-child(even) {
     background: rgb(250, 226, 216);
 }
+
 section h4,
-    section h3 {
-        color: brown;
-        background: rgb(128, 128, 128);
-        background: black;
-        display: block;
-        padding: 3px;
-        border-right: 3px ridge white;
-        border-bottom: 1px ridge white;
-        border-radius: 15px;
-        box-shadow: 5px 5px red;
-        margin: 2px;
-        color: coral;
-        text-align: center;
-        text-decoration: none;
-        text-transform: capitalize;
-    }
-    .ref a {
-        display: block;
-        color: brown;
-        text-decoration: underline;
-        padding: 3px;
-    }
+section h3 {
+    color: brown;
+    background: rgb(128, 128, 128);
+    background: black;
+    display: block;
+    padding: 3px;
+    border-right: 3px ridge white;
+    border-bottom: 1px ridge white;
+    border-radius: 15px;
+    box-shadow: 5px 5px red;
+    margin: 2px;
+    color: coral;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.ref a {
+    display: block;
+    color: brown;
+    text-decoration: underline;
+    padding: 3px;
+}
+
 footer {
     text-transform: capitalize;
     padding: 20px;
 }
+
+/*****=====================MOBILE PHONE , S4, S5, IPHONE4, 5, S3,==========================***********/
 
 @media (max-width: 320px),
 (max-width: 480px) {
@@ -84,7 +104,6 @@ footer {
         width: 100%;
         padding: 5px;
         box-sizing: border-box;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .header-pages nav a {
         display: block;
@@ -135,20 +154,16 @@ footer {
         background: url(../img/mainbg.png) no-repeat;
         background-attachment: fixed;
     }
-    .artist-resume figure {
-        margin: 1px;
-    }
-    .artist-resume img {
-        max-width: 100%;
-        width: 100%;
-        margin: auto;
-    }
     figure {
         display: block;
-        margin-bottom: 1em;
-        margin-right: 40px;
-        margin-left: 40px;
         text-align: center;
+        margin: 1px;
+    }
+    .artist-resume div,
+    .artist-resume img {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
     }
     .artist-resume table,
     th,
@@ -171,7 +186,6 @@ footer {
     th,
     td {
         display: block;
-        text-transform: capitalize;
     }
     th:nth-child(odd) {
         background: rgb(248, 244, 244);
@@ -185,7 +199,6 @@ footer {
         width: 90%;
         margin: 10px auto;
     }
-    
     /*Footer Section*/
     footer {
         background: black;
@@ -199,18 +212,19 @@ footer {
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {}
 
-}
 /****FOR TABLETS 10.1 AND LAPTOP******/
+
 @media (min-width: 769px) {
     #wrapper {
         max-width: 90%;
         box-sizing: border-box;
         margin: 0 auto;
     }
-    #wrapper>.header-pages ,
+    .header-pages,
     main,
+    main header,
     footer {
         width: 100%;
     }
@@ -252,24 +266,26 @@ footer {
     }
     .artist-resume {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    table {
-        flex: 3;
+    .artist-resume> * {
+        flex: 1;
         margin: 0 auto;
+        margin: 20px;
+    }
+
+    table {
         color: red;
         height: 200px;
     }
+
     th,
     td {
-        text-transform: capitalize;
         padding: 10px;
     }
-  
-    main header, main section {
+    main section, main aside  {
         padding: 10px;
         width: 90%;
         margin: 10px auto;
     }
-   
 }

@@ -1,8 +1,6 @@
+"use strict";
 // global variable
 var ext = ".jpg";
-"use strict";
-import artistListImg from "./art.js";
-console.log(artistListImg);
 
 // targetting element to use;
 let myInputImgages = document.getElementById("myInputImgages");
@@ -13,10 +11,7 @@ let id_photo = document.getElementById("id_photo");
 var beginning = document.getElementsByClassName("beginning-life")[0];
 
 // event for these element
-//myInputImgages.addEventListener("change", changeData)
 searchButton.addEventListener("click", changeData);
-
-const text = `li fet nan port-salut yon zon an sid ayiti, li komanse chante ak yon group ,li soti mizk`
 
 // the function run or execute
 function changeData() {
