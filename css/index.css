@@ -33,13 +33,14 @@ footer {
 }
 
 .header-pages a img {
-    max-width: 24px;
+    max-width: 44px;
     border-radius: 15px;
+    background: black;
 }
 
-.social-contact {
+.social-contact  {
     text-align: right;
-    border-bottom: 1px inset coral;
+    border-bottom: 2px inset coral;
 }
 
 table,
@@ -87,6 +88,15 @@ section h3 {
 footer {
     text-transform: capitalize;
     padding: 20px;
+}
+
+datalist {
+    display: none;
+}
+
+
+.hide {
+    display: none;
 }
 
 /*****=====================MOBILE PHONE , S4, S5, IPHONE4, 5, S3,==========================***********/
@@ -193,7 +203,7 @@ footer {
     th:nth-child(even) {
         background: rgb(250, 226, 216);
     }
-    main section {
+    main section, main aside {
         padding: 10px;
         background: white;
         width: 90%;
@@ -268,24 +278,40 @@ footer {
         display: flex;
         justify-content: space-around;
     }
-    .artist-resume> * {
+    .artist-resume>* {
         flex: 1;
         margin: 0 auto;
         margin: 20px;
     }
-
     table {
         color: red;
         height: 200px;
     }
-
     th,
     td {
         padding: 10px;
     }
-    main section, main aside  {
+    main section,
+    main aside {
         padding: 10px;
         width: 90%;
         margin: 10px auto;
     }
 }
+#logintube {
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 40%;
+    margin: auto;
+    display: block;
+    color: white;   
+    padding: 3px;
+    border-right: 3px ridge white;
+    border-bottom: 1px ridge white;
+    border-radius: 15px;
+    box-shadow: 5px 5px red;
+    text-transform: capitalize;
+    background: black;
+    opacity: 10;
+}
+

@@ -21,6 +21,28 @@ var artistListImg = [
         robert_martino: "./img/art/robert_martino.jpg",
     }
 
-]
+];
 
-export default artistListImg;
+/* class ArtistList {
+    constructor(name, aka, birthday, band, img, city) {
+        this.name = name;
+        this.aka = aka;
+        this.birthday = birthday;
+        this.band = band;
+        this.city = city;
+    }
+} */
+
+
+function Artist(name, aka, birthday, band, img, city) {
+    this.name = name;
+    this.aka = aka;
+    this.birthday = birthday;
+    this.band = band;
+    this.img = img;
+    this.city = city;
+}
+
+//export default artistListImg;
+var reginald = new Artist("reginald cange", "Pè las");
+console.log(reginald);

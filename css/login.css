@@ -1,0 +1,122 @@
+body {
+    background: url(../img/mainbg.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    margin: 10px auto;
+}
+
+header.header-pages {
+    background: black;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.header-pages nav a {
+    display: block;
+    color: coral;
+    text-align: center;
+    padding: 3px;
+    border-right: 3px ridge white;
+    border-bottom: 1px ridge white;
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 5px 5px red;
+    width: 90px;
+    text-transform: capitalize;
+}
+.header-pages a img {
+    max-width: 24px;
+    border-radius: 15px;
+}
+
+.social-contact {
+    text-align: right;
+    border-bottom: 1px inset coral;
+}
+/*HEADER TAGS HERE*/
+
+
+form {
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 40%;
+    margin: auto;
+    display: block;
+    color: white;
+    padding: 3px;
+    border-right: 3px ridge white;
+    border-bottom: 1px ridge white;
+    border-radius: 15px;
+    box-shadow: 5px 5px red;
+    text-transform: capitalize;
+    background: black;
+    opacity: 10;
+}
+
+form>* {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    padding: 3px;
+}
+
+form img {
+    max-width: 50%;
+}
+
+form>label {
+    box-shadow: 5px 5px red, -5px -5px coral;
+    border-radius: 15px;
+    font-family: "Bradley Hand ITC", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+form>input[type="submit"] {
+    font-size: 1.2em;
+    background: black;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: wheat;
+    border: 3px outset white;
+    font-family: "Bradley Hand ITC", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    width: 25%;
+}
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+.hide {
+    display: none;
+}
+
+@media (max-width: 320px),
+(max-width: 480px) {
+    form {
+        max-width: 100%;
+    }
+    form>* {
+        display: block;
+        margin: 20px auto;
+        width: 60%;
+        padding: 3px;
+    }
+    form img {
+        max-width: 50%;
+    }
+    form>label {
+        font-size: 1.2em;
+    }
+}

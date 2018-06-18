@@ -1,29 +1,54 @@
 [
     {
         "id": "01",
-        "name": "",
-        "AKA": "",
+        "name": "reginald cange",
+        "AKA": "pè las",
         "Nesans": "",
-        "djazz": "",
+        "djazz": ["fasil", "zenglen"],
         "vil": "",
         "genre": ""
     },
     {
         "id": "02",
-        "name": "",
-        "AKA": "",
+        "name": "adler jean",
+        "AKA": "top adlerman",
         "Nesans": "",
-        "djazz": "",
+        "djazz": ["orginal rap staff"],
         "vil": "",
-        "genre": ""
+        "genre": ["compas", "rap", "raga morfin"]
     },
     {
         "id": "03",
-        "name": "",
-        "AKA": "",
+        "name": "dany pierre",
+        "AKA": "dany p",
         "Nesans": "",
-        "djazz": "",
+        "djazz": ["tabou combo", "tabou generation"],
         "vil": "",
-        "genre": ""
+        "genre": ["compas", "compas direct", "rnb"]
+    },
+    {
+        "id": "04",
+        "name": "roberto martino",
+        "AKA": "met beton",
+        "Nesans":"",
+        "djazz": ["t-vice"],
+        "vil":"",
+        "genre":["compas direct", "compas love"]
+
+    },
+    {
+        "id": "05",
+        "name": "alan cave",
+        "AKA": "AC",
+        "Nesans":"",
+        "djazz":[
+            "zin"
+        ],
+        "vil":"",
+        "genre":[
+            "compas love",
+            "zouk",
+            "compas"
+        ]
     }
 ]
