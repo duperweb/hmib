@@ -102,8 +102,7 @@ form>input[type="submit"] {
     display: none;
 }
 
-@media (max-width: 320px),
-(max-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     form {
         max-width: 100%;
     }
@@ -118,5 +117,17 @@ form>input[type="submit"] {
     }
     form>label {
         font-size: 1.2em;
+    }
+    footer {
+        text-transform: uppercase;
+        padding: 20px;
+        background: black;
+        box-shadow: inset 5px 5px 5px red, inset -5px -5px 15px red;
+    }
+    .footer-link a {
+        text-align: center;
+        color: coral;
+        padding: 10px;
+        display: block;
     }
 }
