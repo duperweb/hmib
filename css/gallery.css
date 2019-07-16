@@ -1,0 +1,18 @@
+
+
+body, div, main section  {
+    background: #000;
+    box-sizing: border-box;
+}
+
+.row {
+    border: 1px solid #FFF;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+
+.row img , .row a, .row span {
+    height: auto;
+    display: block;
+}

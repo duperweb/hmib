@@ -4,7 +4,7 @@
     /* Styles */
     header,
     .header-page,
-    main,
+    #main-content-container, 
     footer {
         width: 100%;
         margin: 10px auto;

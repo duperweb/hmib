@@ -9,6 +9,8 @@ body {
 img, iframe, object, embed, video {
     width: 100%;
     max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 button {
@@ -19,11 +21,7 @@ nav, footer {
     background: inherit;
 }
 
-img {
-    max-width: 100%;
-    margin: auto;
-    box-sizing: border-box;
-}
+
 
 .social-contact img {
     max-width: 40px;
@@ -32,7 +30,6 @@ img {
     display: inline;
     border: 2px solid salmon;
 }
-
 
 .main-section-division-heading, h2, h3 , h1, .sutitle {
     background: #000;
