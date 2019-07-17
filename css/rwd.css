@@ -111,14 +111,10 @@
     /* Styles */
 }
 
-/* 
-iPads (portrait and landscape)
- ----------- 
- */
+/* iPads (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /*Styles*/
-
+    /* Styles */
 }
 
 /* iPads (landscape) ----------- */
@@ -155,21 +151,6 @@ iPads (portrait and landscape)
     }
     .social-contact {
         text-align: right;
-    }
-    .landing {
-        display: block;
-        color: black;
-        background: white;
-        border-right: 1px ridge white;
-        border-bottom: 1px ridge white;
-        box-shadow: 3px 3px red;
-        padding: 10px;
-        border-radius: 15px;
-        margin: 20px auto;
-        text-transform: uppercase;
-        text-align: center;
-        font: 22px bolder;
-        width: 50%;
     }
     .landing-nav {
         text-align: center;
