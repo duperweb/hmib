@@ -152,6 +152,9 @@ iPads (portrait and landscape)
     /* Styles */
     .header-page {
         background-image: url("../img/mainbg.png");
+        border-right: 1px ridge rgb(124, 30, 13);
+        border-bottom: 1px ridge rgb(124, 30, 13);
+        box-shadow: 3px 3px red;
     }
     .social-contact {
         text-align: right;
