@@ -197,8 +197,69 @@ iPads (portrait and landscape)
         box-shadow: 5px 5px red;
         width: 90px;
     }
+    .nav-wrapper {
+        background: red;
+        padding: 7px;
+        margin: auto;
+        width: 50%;
+    }
+    .input-field,
+    .input-search {
+        background: #000;
+        background: white;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .input-search::placeholder {
+        color: red;
+        text-transform: capitalize;
+    }
+    .hide {
+        display: none;
+    }
+    .box-container {
+        display: flex;
+        background: black;
+        justify-content: space-between;
+    }
+    
+    /* this box is the child of the box container*/
+    .box {
+        flex: 1;
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: black;
+        border: 2px groove red;
+        color: coral;
+        height: auto;
+        text-align: center;
+    }
+    
+    ul {list-style-type: none;}
+    
+    .box ul li {
+        border: 4px groove rgb(28, 28, 29);
+        padding: 10px;
+        justify-content: space-between;
+    }
+    /*---- referans----*/
+    .box-toggleable {
+        background: rgb(18, 34, 62);
+        border: 1px groove red;
+        font-size: 15px;
+        padding: 10px;
+        max-width: 200px;
+    }
+    .box-toggleable .hide-content {
+        display: none;
+    }
+    
+    .box-toggleable:hover .hide-content {
+    display: block;
+    }
+    
 }
-
 /* Large screens ----------- */
 
 @media only screen and (min-width: 1824px) {
