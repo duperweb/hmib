@@ -1,6 +1,6 @@
 
 
-body, div, main section  {
+body, div.container, main section  {
     background: #000;
     box-sizing: border-box;
 }

@@ -80,13 +80,13 @@
         top: 0;
         left: 0;
         opacity: 1;
-        overflow-x: hidden;
+        overflow-x: auto;
         padding-top: 60px;
         transition: 0.5s;
         box-sizing: border-box;
         background: black;
         color: coral;
-        height: auto;
+        height: 100%;
         text-align: center;
         border: 1px groove red;
     }
@@ -101,10 +101,10 @@
         text-align: center;
         border-right: 3px ridge white;
         border-bottom: 1px ridge white;
-        /* border-radius: 15px; */
         margin: 5px;
         box-shadow: 1px 1px red;
         text-transform: capitalize;
+        font-family: "gill"
     }
     .side-nav a:hover {
         color: #fff;
@@ -186,6 +186,114 @@ iPads (portrait and landscape)
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /*Styles*/
+    .header-page {
+        background-image: url("../img/mainbg.png");
+        border-right: 1px ridge rgb(124, 30, 13);
+        border-bottom: 1px ridge rgb(124, 30, 13);
+        box-shadow: 3px 3px red;
+    }
+    .social-contact {
+        text-align: left;
+    }
+    .landing {
+        display: block;
+        color: black;
+        background: white;
+        border-right: 1px ridge white;
+        border-bottom: 1px ridge white;
+        box-shadow: 3px 3px red;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 20px auto;
+        text-transform: uppercase;
+        text-align: center;
+        font: 22px bolder;
+        width: 50%;
+    }
+    .landing-nav {
+        text-align: center;
+        margin: 10px auto;
+    }
+    .landing-nav-subcontainer a {
+        border-radius: 10px 10px;
+        border-top: 2px ridge red;
+        border-bottom: 2px ridge red;
+        color: rgb(216, 216, 216);
+        background: #000;
+        padding: 10px;
+        margin: 10px auto;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: coral;
+        text-align: center;
+        border-right: 3px ridge white;
+        border-bottom: 1px ridge white;
+        border-radius: 15px;
+        margin: 5px;
+        box-shadow: 5px 5px red;
+        width: 90px;
+    }
+    .nav-wrapper {
+        background: red;
+        padding: 7px;
+        margin: auto;
+        width: 50%;
+    }
+    .input-field,
+    .input-search {
+        background: #000;
+        background: white;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .input-search::placeholder {
+        color: red;
+        text-transform: capitalize;
+    }
+    .side-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        overflow-x: auto;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-sizing: border-box;
+        background: black;
+        color: coral;
+        height: 100%;
+        text-align: center;
+        border: 1px groove red;
+    }
+    .side-nav a {
+        padding: 5px 5px 5px 15px;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        display: block;
+        color: coral;
+        text-align: center;
+        border-right: 3px ridge white;
+        border-bottom: 1px ridge white;
+        margin: 5px;
+        box-shadow: 1px 1px red;
+        text-transform: capitalize;
+        font-family: "gill"
+    }
+    .side-nav a:hover {
+        color: #fff;
+    }
+    .side-nav .btn-close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
 }
 
 /* iPads (landscape) ----------- */
@@ -283,20 +391,54 @@ iPads (portrait and landscape)
     .hide {
         display: none;
     }
-    .box-container {
+
+    #main-content-container {
         display: flex;
+    }
+    .mini-wrapper {
+        width: 80%;
+    }
+    .side-nav {
+        height: 100%;
+        order: -1;
+        flex: 1;
+        widows: 18%;
+        padding-top: 60px;
+        box-sizing: border-box;
         background: black;
-        justify-content: space-between;
+        color: coral;
+        height: 100%;
+        text-align: center;
+        border: 1px groove red;
     }
-    /* this box is the child of the box container*/
-    ul {
-        list-style-type: none;
+    .side-nav a {
+        padding: 5px 5px 5px 15px;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        display: block;
+        color: coral;
+        text-align: center;
+        border-right: 3px ridge white;
+        border-bottom: 1px ridge white;
+        /* border-radius: 15px; */
+        margin: 5px;
+        box-shadow: 1px 1px red;
+        text-transform: capitalize;
+        font-family: "gill"
     }
-    .box ul li {
-        border: 4px groove rgb(28, 28, 29);
-        padding: 10px;
-        justify-content: space-between;
+    .side-nav a:hover {
+        color: #fff;
     }
+    .side-nav .btn-close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
     /*---- referans----*/
 }
 
