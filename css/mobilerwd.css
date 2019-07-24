@@ -4,7 +4,7 @@
     /* Styles */
     header,
     .header-page,
-    #main-content-container, 
+    #main-content-container,
     footer {
         width: 100%;
         margin: 10px auto;
@@ -14,20 +14,44 @@
         padding: 5px;
         box-sizing: border-box;
     }
+    .social-contact {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
     .landing-nav div,
     .landing-nav div>a {
         display: block;
-        color: black;
         background: white;
+        color: black;
+        padding: 3px;
         border-right: 1px ridge white;
         border-bottom: 1px ridge white;
-        box-shadow: 3px 3px red;
-        padding: 3px;
         border-radius: 15px;
         margin: 10px;
+        box-shadow: 3px 3px red;
         text-transform: uppercase;
         text-align: center;
         font-weight: bolder;
+    }
+    .menu-icon {
+        padding: 5px;
+        display: inline-block;
+        width: 40px;
+        box-sizing: border-box;
+        background: white;
+        border-right: 1px ridge white;
+        border-bottom: 1px ridge white;
+        box-shadow: 3px 1px red;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+    .menu-icon span {
+        border-bottom: 3px red solid;
+        display: block;
+        padding: 3px;
+        max-width: 40px;
+        border-radius: 15px;
     }
     .landing {
         border-radius: 5px 5px;
@@ -47,6 +71,50 @@
     .input-search::placeholder {
         color: red;
         text-transform: capitalize;
+    }
+    .side-nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-sizing: border-box;
+        background: black;
+        color: coral;
+        height: auto;
+        text-align: center;
+        border: 1px groove red;
+    }
+    .side-nav a {
+        padding: 5px 5px 5px 15px;
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.3s;
+        text-transform: uppercase;
+        display: block;
+        color: coral;
+        text-align: center;
+        border-right: 3px ridge white;
+        border-bottom: 1px ridge white;
+        /* border-radius: 15px; */
+        margin: 5px;
+        box-shadow: 1px 1px red;
+        text-transform: capitalize;
+    }
+    .side-nav a:hover {
+        color: #fff;
+    }
+    .side-nav .btn-close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        font-size: 36px;
+        margin-left: 50px;
     }
     main section,
     main aside {
@@ -118,7 +186,6 @@ iPads (portrait and landscape)
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /*Styles*/
-
 }
 
 /* iPads (landscape) ----------- */
@@ -131,7 +198,6 @@ iPads (portrait and landscape)
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     /* Styles */
-   
 }
 
 /**********
@@ -222,44 +288,18 @@ iPads (portrait and landscape)
         background: black;
         justify-content: space-between;
     }
-    
     /* this box is the child of the box container*/
-    .box {
-        flex: 1;
-        width: 30%;
-        padding: 10px;
-        box-sizing: border-box;
-        background: black;
-        border: 2px groove red;
-        color: coral;
-        height: auto;
-        text-align: center;
+    ul {
+        list-style-type: none;
     }
-    
-    ul {list-style-type: none;}
-    
     .box ul li {
         border: 4px groove rgb(28, 28, 29);
         padding: 10px;
         justify-content: space-between;
     }
     /*---- referans----*/
-    .box-toggleable {
-        background: rgb(18, 34, 62);
-        border: 1px groove red;
-        font-size: 15px;
-        padding: 10px;
-        max-width: 200px;
-    }
-    .box-toggleable .hide-content {
-        display: none;
-    }
-    
-    .box-toggleable:hover .hide-content {
-    display: block;
-    }
-    
 }
+
 /* Large screens ----------- */
 
 @media only screen and (min-width: 1824px) {
