@@ -1,3 +1,45 @@
+/*BASE HTML FOR ALL SCREEN*/
+
+.side-nav {
+    padding-top: 60px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    background: black;
+    color: coral;
+    text-align: center;
+    border: 1px groove red;
+    order: -1;
+}
+
+.side-nav a {
+    padding: 5px 5px 5px 15px;
+    margin: 5px;
+    font-size: 22px;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: coral;
+    text-align: center;
+    border-right: 3px ridge white;
+    border-bottom: 1px ridge white;
+    box-shadow: 1px 1px red;
+    text-transform: capitalize;
+    font-family: "gill"
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -5,9 +47,10 @@
     header,
     .header-page,
     #main-content-container,
+    .social-contact,
     footer {
         width: 100%;
-        margin: 10px auto;
+        margin: 0 auto;
     }
     .header-page {
         background: black;
@@ -16,8 +59,6 @@
     }
     .social-contact {
         text-align: center;
-        width: 100%;
-        margin: 0 auto;
     }
     .landing-nav div,
     .landing-nav div>a {
@@ -33,25 +74,6 @@
         text-transform: uppercase;
         text-align: center;
         font-weight: bolder;
-    }
-    .menu-icon {
-        padding: 5px;
-        display: inline-block;
-        width: 40px;
-        box-sizing: border-box;
-        background: white;
-        border-right: 1px ridge white;
-        border-bottom: 1px ridge white;
-        box-shadow: 3px 1px red;
-        border-radius: 10px;
-        margin-right: 5px;
-    }
-    .menu-icon span {
-        border-bottom: 3px red solid;
-        display: block;
-        padding: 3px;
-        max-width: 40px;
-        border-radius: 15px;
     }
     .landing {
         border-radius: 5px 5px;
@@ -81,89 +103,6 @@
         left: 0;
         opacity: 1;
         overflow-x: auto;
-        padding-top: 60px;
-        transition: 0.5s;
-        box-sizing: border-box;
-        background: black;
-        color: coral;
-        height: 100%;
-        text-align: center;
-        border: 1px groove red;
-    }
-    .side-nav a {
-        padding: 5px 5px 5px 15px;
-        text-decoration: none;
-        font-size: 22px;
-        transition: 0.3s;
-        text-transform: uppercase;
-        display: block;
-        color: coral;
-        text-align: center;
-        border-right: 3px ridge white;
-        border-bottom: 1px ridge white;
-        margin: 5px;
-        box-shadow: 1px 1px red;
-        text-transform: capitalize;
-        font-family: "gill"
-    }
-    .side-nav a:hover {
-        color: #fff;
-    }
-    .side-nav .btn-close {
-        position: absolute;
-        top: 0;
-        right: 22px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-    main section,
-    main aside {
-        /*padding: 10px;*/
-        background: white;
-        width: 98%;
-        margin: 10px auto;
-    }
-    .artist-resume {
-        background: url(../img/mainbg.png) no-repeat;
-        background-attachment: fixed;
-    }
-    figure {
-        display: block;
-        text-align: center;
-        margin: 1px;
-    }
-    .artist-resume div,
-    .artist-resume img {
-        width: 100%;
-        text-align: center;
-        margin: 5px auto;
-    }
-    .artist-resume table,
-    th,
-    td {
-        border: 1px solid salmon;
-        border-collapse: collapse;
-    }
-    table {
-        width: 98%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    tbody {
-        display: flex;
-    }
-    tr {
-        flex: 1;
-    }
-    th,
-    td {
-        display: block;
-    }
-    th:nth-child(odd) {
-        background: rgb(248, 244, 244);
-    }
-    th:nth-child(even) {
-        background: rgb(117, 116, 116);
     }
 }
 
@@ -179,10 +118,7 @@
     /* Styles */
 }
 
-/* 
-iPads (portrait and landscape)
- ----------- 
- */
+/* iPads (portrait and landscape) -----------  */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /*Styles*/
@@ -216,12 +152,8 @@ iPads (portrait and landscape)
     }
     .landing-nav-subcontainer a {
         border-radius: 10px 10px;
-        border-top: 2px ridge red;
-        border-bottom: 2px ridge red;
-        color: rgb(216, 216, 216);
         background: #000;
         padding: 10px;
-        margin: 10px auto;
         text-transform: uppercase;
         font-weight: bolder;
         color: coral;
@@ -229,7 +161,7 @@ iPads (portrait and landscape)
         border-right: 3px ridge white;
         border-bottom: 1px ridge white;
         border-radius: 15px;
-        margin: 5px;
+        margin: 10px auto;
         box-shadow: 5px 5px red;
         width: 90px;
     }
@@ -241,7 +173,6 @@ iPads (portrait and landscape)
     }
     .input-field,
     .input-search {
-        background: #000;
         background: white;
         border-radius: 10px;
         padding: 5px;
@@ -261,38 +192,6 @@ iPads (portrait and landscape)
         overflow-x: auto;
         padding-top: 60px;
         transition: 0.5s;
-        box-sizing: border-box;
-        background: black;
-        color: coral;
-        height: 100%;
-        text-align: center;
-        border: 1px groove red;
-    }
-    .side-nav a {
-        padding: 5px 5px 5px 15px;
-        text-decoration: none;
-        font-size: 22px;
-        transition: 0.3s;
-        text-transform: uppercase;
-        display: block;
-        color: coral;
-        text-align: center;
-        border-right: 3px ridge white;
-        border-bottom: 1px ridge white;
-        margin: 5px;
-        box-shadow: 1px 1px red;
-        text-transform: capitalize;
-        font-family: "gill"
-    }
-    .side-nav a:hover {
-        color: #fff;
-    }
-    .side-nav .btn-close {
-        position: absolute;
-        top: 0;
-        right: 22px;
-        font-size: 36px;
-        margin-left: 50px;
     }
 }
 
@@ -300,6 +199,9 @@ iPads (portrait and landscape)
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     /* Styles */
+    .open-slide {
+        display: block;
+    }
 }
 
 /* iPads (portrait) ----------- */
@@ -391,52 +293,11 @@ iPads (portrait and landscape)
     .hide {
         display: none;
     }
-
     #main-content-container {
         display: flex;
     }
     .mini-wrapper {
         width: 80%;
-    }
-    .side-nav {
-        height: 100%;
-        order: -1;
-        flex: 1;
-        widows: 18%;
-        padding-top: 60px;
-        box-sizing: border-box;
-        background: black;
-        color: coral;
-        height: 100%;
-        text-align: center;
-        border: 1px groove red;
-    }
-    .side-nav a {
-        padding: 5px 5px 5px 15px;
-        text-decoration: none;
-        font-size: 22px;
-        transition: 0.3s;
-        text-transform: uppercase;
-        display: block;
-        color: coral;
-        text-align: center;
-        border-right: 3px ridge white;
-        border-bottom: 1px ridge white;
-        /* border-radius: 15px; */
-        margin: 5px;
-        box-shadow: 1px 1px red;
-        text-transform: capitalize;
-        font-family: "gill"
-    }
-    .side-nav a:hover {
-        color: #fff;
-    }
-    .side-nav .btn-close {
-        position: absolute;
-        top: 0;
-        right: 22px;
-        font-size: 36px;
-        margin-left: 50px;
     }
 
     /*---- referans----*/

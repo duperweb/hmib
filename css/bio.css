@@ -1,0 +1,42 @@
+.artist-resume {
+    background: url(../img/mainbg.png) no-repeat;
+    background-attachment: fixed;
+}
+figure {
+    display: block;
+    text-align: center;
+    margin: 1px;
+}
+.artist-resume div,
+.artist-resume img {
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+}
+.artist-resume table,
+th,
+td {
+    border: 1px solid salmon;
+    border-collapse: collapse;
+}
+table {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+}
+tbody {
+    display: flex;
+}
+tr {
+    flex: 1;
+}
+th,
+td {
+    display: block;
+}
+th:nth-child(odd) {
+    background: rgb(248, 244, 244);
+}
+th:nth-child(even) {
+    background: rgb(117, 116, 116);
+}

@@ -1,18 +1,16 @@
 
-
+*, *::after, *::before, html, body, div > img, img {
+    box-sizing: border-box;
+}
 body, div.container, main section  {
     background: #000;
     box-sizing: border-box;
 }
 
-.row {
-    border: 1px solid #FFF;
-    text-transform: capitalize;
-    padding: 10px;
+a img {
+    box-sizing: border-box;
 }
 
 
-.row img , .row a, .row span {
-    height: auto;
-    display: block;
-}
+
+

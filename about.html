@@ -14,41 +14,46 @@
 <body>
     <header class="header-page">
         <div class="social-contact">
-            <div class="">
-                <a href="http://www.youtube.com/hmibio">
-                    <img src="img/social/youtube.png" alt="">
+            <span class="open-slide hide-on-extra-large-only">
+                <a onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                    </svg>
                 </a>
-                <a href="http://www.instagram.com/hmibio">
-                    <img src="img/social/insta-icon.jpeg" alt="">
-                </a>
-                <a href="http://www.facebook.com/hmibio">
-                    <img src="img/social/fb.png" alt="">
-                </a>
-                <a href="http://www.twitter.com/hmibio">
-                    <img src="img/social/twitter-icon.png" alt="">
-                </a>
-                <a href="http://www.facebook.com/hmibio">
-                    <img src="img/icon/add-user.png" alt="">
-                </a>
-                <a href="http://www.twitter.com/hmibio">
-                    <img src="img/icon/music.png" alt="">
-                </a>
-                <a href="http://www.instagram.com/hmibio">
-                    <img src="img/icon/info-blog.png" alt="">
-                </a>
-            </div>
+            </span>
+            <a href="http://www.youtube.com/hmibio">
+                <img src="img/social/youtube.png" alt="">
+            </a>
+            <a href="http://www.instagram.com/hmibio">
+                <img src="img/social/insta-icon.jpeg" alt="">
+            </a>
+            <a href="http://www.facebook.com/hmibio">
+                <img src="img/social/fb.png" alt="">
+            </a>
+            <a href="http://www.twitter.com/hmibio">
+                <img src="img/social/twitter-icon.png" alt="">
+            </a>
+            <a href="login.html">
+                <img src="img/add-user.png" alt="">
+            </a>
+            <a href="http://www.twitter.com/hmibio">
+                <img src="img/icon/music.png" alt="">
+            </a>
         </div>
-        <hr />
+        </div>
+        <hr class="hide-on-large-only" />
         <div class="landing-nav">
             <div class="landing-nav-subcontainer">
-                <a href="#" title="mizik ki soti nan denye mwa yo">new</a>
-                <a href="buymusic.html" title="itunes , amazon , google mizik">buy it now</a>
+                <a href="index.html">home</a>
                 <a href="gallery.html" title="tcket , kompaevents , wiki mizik">gallery</a>
                 <a href="blog.html">blog</a>
-                <a href="login.html">login</a>
+                <a href="#" title="mizik ki soti nan denye mwa yo">new</a>
+                <a href="buymusic.html" title="itunes , amazon , google mizik">buy it now</a>
                 <a href="support.html">donate</a>
                 <div class="landing">
-                    Haitian Music Industry Biography
+                    Haitian Media Industry Biography
                 </div>
             </div>
         </div>
@@ -63,11 +68,10 @@
                 </form>
             </div>
         </nav>
-        
     </header>
     <main id="main-content-container">
-      
-            <!--
+
+        <!--
                 there could be a now music,, where 
                 *artist can create an account to sell their music and or have a request for ..
                 *when people want to listen streaming music ,
@@ -75,56 +79,58 @@
                 amazon, itunes, playmusic ...............
                 
               -->
-            <aside class="side-menu side-bar">
-                <ul>
-                    <li><a href="" title="kek ti mizik damou 2000 konpa raga rap">Ti Mizik Alepòk</a></li>
-                    <li><a href="">Atis Moman</a></li>
-                    <li><a href="">Mizik Moman</a></li>
-                    <li><a href="">Maestro yo</a></li>
-                    <li><a href="">Yayad ak Gouyad</a></li>
-                    <li><a href="">Keyboardist|Pianist</a></li>
-                    <li><a href="">Guitarist</a></li>
-                    <li><a href="">Animatè</a></li>
-                </ul>
-            </aside>
-            <ul class="collection with-header">
-                <li class="collection-header"><h4>related artist</h4> </li>
-                <li class="collection-item avatar">
-                    <img src="img/art/alan_cave.jpg" alt="alan cave" class="circle">
-                    <span class="title">bouch</span>
-                    <p>
-                        timeless <br>
-                        2016
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-                <li class="collection-item avatar">
-                    <img src="img/art/nickenson.jpeg" alt="alan cave" class="circle">
-                    <span class="title">bouch</span>
-                    <p>
-                        timeless <br>
-                        2016
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-                <li class="collection-item avatar">
-                    <img src="img/art/arly.jpg" alt="alan cave" class="circle">
-                    <span class="title">Loving you</span>
-                    <p>
-                        encyclopedie <br>
-                        2016
-                    </p>
-                    <a href="#!" class="secondary-content">
-                        <i class="material-icons">grade</i>
-                    </a>
-                </li>
-
+        <aside class="side-menu side-bar">
+            <ul>
+                <li><a href="" title="kek ti mizik damou 2000 konpa raga rap">Ti Mizik Alepòk</a></li>
+                <li><a href="">Atis Moman</a></li>
+                <li><a href="">Mizik Moman</a></li>
+                <li><a href="">Maestro yo</a></li>
+                <li><a href="">Yayad ak Gouyad</a></li>
+                <li><a href="">Keyboardist|Pianist</a></li>
+                <li><a href="">Guitarist</a></li>
+                <li><a href="">Animatè</a></li>
             </ul>
-    </section>
+        </aside>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>related artist</h4>
+            </li>
+            <li class="collection-item avatar">
+                <img src="img/art/alan_cave.jpg" alt="alan cave" class="circle">
+                <span class="title">bouch</span>
+                <p>
+                    timeless <br>
+                    2016
+                </p>
+                <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <img src="img/art/nickenson.jpeg" alt="alan cave" class="circle">
+                <span class="title">bouch</span>
+                <p>
+                    timeless <br>
+                    2016
+                </p>
+                <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <img src="img/art/arly.jpg" alt="alan cave" class="circle">
+                <span class="title">Loving you</span>
+                <p>
+                    encyclopedie <br>
+                    2016
+                </p>
+                <a href="#!" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+
+        </ul>
+        </section>
     </main>
     <footer class="page-footer black">
         <div class="footer-link">
