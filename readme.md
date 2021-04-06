@@ -1,1 +1,4 @@
-hmibio
+#hmibio
+```
+> A PLATFORM TO FOR HAITIAN MEDIA, TO POST IDEAS , MUSICS, A LOT MORE
+```
